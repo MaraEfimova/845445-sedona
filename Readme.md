@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Мария Ефимова](https://up.htmlacademy.ru/htmlcss/22/user/845445).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Власов](https://htmlacademy.ru/profile/amaringo).
 
 ---
 
