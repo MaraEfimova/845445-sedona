@@ -140,12 +140,13 @@
     <section class="modal modal-hotel">
       <h2>Поиск гостиницы в Седоне</h2>
       <form class="search-form" method="get" action="">
+        <!--Что прописывать в action? Адрес для отправки форм Академии? -->
             <fieldset>
               <legend class="visually-hidden">Поиск гостиницы в Седоне</legend>
 
               <label for="date-of-arrival">Дата заезда:</label>
               <input type="date" name="date-of-arrival" id="date-of-arrival" placeholder="24.04.2017">
-
+              <!--Валидатор ругается на type="date", стоит ли заменить его на type="text"? И нужен ли здесь placeholder или на макете просто показано как должна работать форма, но поля должны быть пустыми, бес подсказок?-->
               <label for="date-of-departure">Дата выезда:</label>
               <input type="date" name="date" id="date-of-departure" placeholder="04.07.2017">
 
@@ -156,7 +157,7 @@
               <input type="number" min="1" max="10" step="1" id="child">
             </fieldset>
             <button type="search" class="filter-button button">Найти</button>
-
+      </form>
     </section>
 
 	</body>
