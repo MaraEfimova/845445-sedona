@@ -36,7 +36,6 @@
 
       <div class="representation">
         <img src="img/welcome.svg" width="459" height="353" alt="Welcome to the gorgeous, Sedona. Because the grand canyon sucks!">
-        <!--Это фоновые изображения, не контекстные? Я пока оставлю этот блок с тегами img-->
       </div>
 
       <section class="features">
@@ -136,17 +135,28 @@
           <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy site">
         </a>
       </p>
-
     </footer>
 
     <section class="modal modal-hotel">
-      <!--Здесь будет форма-->
       <h2>Поиск гостиницы в Седоне</h2>
-      <p>Дата заезда:</p>
-      <p>Дата выезда:</p>
-      <p>Взрослые:</p>
-      <p>Дети:</p>
-      <span class="modal-close">Закрыть</span>
+      <form class="search-form" method="get" action="">
+            <fieldset>
+              <legend class="visually-hidden">Поиск гостиницы в Седоне</legend>
+
+              <label for="date-of-arrival">Дата заезда:</label>
+              <input type="date" name="date-of-arrival" id="date-of-arrival" placeholder="24.04.2017">
+
+              <label for="date-of-departure">Дата выезда:</label>
+              <input type="date" name="date" id="date-of-departure" placeholder="04.07.2017">
+
+              <label for="adult">Взрослые</label>
+              <input type="number" min="1" max="10" step="1" id="adult">
+
+              <label for="child">Дети</label>
+              <input type="number" min="1" max="10" step="1" id="child">
+            </fieldset>
+            <button type="search" class="filter-button button">Найти</button>
+
     </section>
 
 	</body>
