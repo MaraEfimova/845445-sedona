@@ -35,7 +35,7 @@
       <section class="search-form">
         <h3 class="visually-hidden">Форма поиска гостиницы</h3>
 
-        <form class="filter" method="get" action="">
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Инфраструктура:</legend>
               <ul>
@@ -71,10 +71,10 @@
               </ul>
           </fieldset>
           <fieldset>
-            <legend class="visually-hidden">Стоимость в сутки</legend>
-            <label for="filter-price">Стоимость в сутки (Р):</label>
-            От 0 <input type="range" min="0" max="4000" step="500" id="filter-price" name="price">До 4000
-            <!--Вот здесь не знаю как сделать. Говорили на лекции, что эти два ползунка через JS нужно клепать-->
+            <p>Стоимость в сутки (Р):</p>
+            <input type="text" name="range min" placeholder="От 0" >
+            <input type="text" name="range max" placeholder="До 3000">
+            <input type="range" min="0" max="4000" step="500" name="price">
           </fieldset>
           <button type="submit" class="filter-button button">Показать</button>
         </form>

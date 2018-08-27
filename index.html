@@ -103,9 +103,36 @@
         <div class="excerpt">
           <p class="attract">Заинтересовались?</p>
           <p class="features-offer">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="hotel-search-button">Поиск гостиницы в Седоне</button>
         </div>
 
-        <span class="hotel-search-button">Поиск гостиницы в Седоне</span>
+        <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
+          <div class="date-search-form">
+            <label for="date-of-arrival">Дата заезда:</label>
+            <input type="text" name="date-of-arrival" id="date-of-arrival" placeholder="24.04.2017">
+            <button type="submit"><img src="img/calendar.svg" alt="calendar"></button>
+          </div>
+
+          <div class="date-search-form">
+            <label for="date-of-departure">Дата выезда:</label>
+            <input type="text" name="date" id="date-of-departure" placeholder="04.07.2017">
+            <button type="submit"><img src="img/calendar.svg" alt="calendar"></button>
+          </div>
+          
+          <div class="number-search-form">
+            <label for="adult">Взрослые</label>
+            <input type="number" min="1" max="10" step="1" id="adult">
+          </div>          
+          
+          <div class="number-search-form">
+            <label for="child">Дети</label>
+            <input type="number" min="1" max="10" step="1" id="child">
+          </div>
+
+          <button type="submit" class="filter-button button">Найти</button>
+        </form>
+
+        
 
       </section>
 
@@ -136,29 +163,6 @@
         </a>
       </p>
     </footer>
-
-    <section class="modal modal-hotel">
-      <h2>Поиск гостиницы в Седоне</h2>
-      <form class="search-form" method="get" action="">
-        <!--Что прописывать в action? Адрес для отправки форм Академии? -->
-            <fieldset>
-              <legend class="visually-hidden">Поиск гостиницы в Седоне</legend>
-
-              <label for="date-of-arrival">Дата заезда:</label>
-              <input type="date" name="date-of-arrival" id="date-of-arrival" placeholder="24.04.2017">
-              <!--Валидатор ругается на type="date", стоит ли заменить его на type="text"? И нужен ли здесь placeholder или на макете просто показано как должна работать форма, но поля должны быть пустыми, бес подсказок?-->
-              <label for="date-of-departure">Дата выезда:</label>
-              <input type="date" name="date" id="date-of-departure" placeholder="04.07.2017">
-
-              <label for="adult">Взрослые</label>
-              <input type="number" min="1" max="10" step="1" id="adult">
-
-              <label for="child">Дети</label>
-              <input type="number" min="1" max="10" step="1" id="child">
-            </fieldset>
-            <button type="search" class="filter-button button">Найти</button>
-      </form>
-    </section>
 
 	</body>
 </html>
