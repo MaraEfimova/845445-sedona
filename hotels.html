@@ -72,8 +72,10 @@
           </fieldset>
           <fieldset>
             <p>Стоимость в сутки (Р):</p>
-            <input type="text" name="range min" placeholder="От 0" >
-            <input type="text" name="range max" placeholder="До 3000">
+            <div class="range-setup">
+              <input class="range min" type="text" name="range min" placeholder="От 0">
+              <input type="text" name="range max" placeholder="До 3000">
+            </div>
             <input type="range" min="0" max="4000" step="500" name="price">
           </fieldset>
           <button type="submit" class="filter-button button">Показать</button>
@@ -93,8 +95,8 @@
               <li><a class="price-sorting">По цене</a></li>
               <li><a class="type-sorting">По типу</a></li>
               <li><a class="rating-sorting">По рейтингу</a></li>
-              <li><a class="search-sorting-button"></a></li>
-              <li><a class="search-sorting-button"></a></li>
+              <li><a class="search-sorting-button"><span>Стрелка вверх</span></a></li>
+              <li><a class="search-sorting-button"><span>Стрелка вниз</span></a></li>
             </ul>
           </div>
         </div>
