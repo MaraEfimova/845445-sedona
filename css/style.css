@@ -20,21 +20,18 @@ a {
     text-decoration: none;
 }
 
-.main-navigation {
+.site-navigation {
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
     color: #000000;
-
     background-color: #ffffff;
 }
 
-.site-navigation,
-.offers-list {
+.site-navigation {
     list-style: none;
 }
 
-.main-navigation a,
 .site-navigation a {
     color: #000000;
 }
