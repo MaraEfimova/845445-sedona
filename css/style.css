@@ -20,7 +20,7 @@ a {
     text-decoration: none;
 }
 
-.site-navigation {
+.site-navigation a {
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
@@ -36,15 +36,15 @@ a {
     color: #000000;
 }
 
-.main-navigation a:hover {
-    color: #81b3d2
+.site-navigation a:hover {
+    color: #81b3d2;
 }
 
-.main-navigation a:active {
+.site-navigation a:active {
     color: #766357;
 }
 
-.main-navigation a:focus {
+.site-navigation a:focus {
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -235,4 +235,172 @@ a {
 .footer-social,
 .footer-copyright {
     text-align: center;
+}
+
+/*стилизация внутренней страницы*/
+.inner-page {
+    color: #000000;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.wrapper-hotel {
+    background-color: #fefefe;
+}
+
+.page-header {
+    background-color: #ffffff;
+}
+
+.filter {
+   background-color: #766357;
+   background-image: url("../img/sedona-background-photo.png");
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter-list,
+.filter-option {
+    list-style: none;
+}
+
+.filter legend {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+}
+
+.filter-option label {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+}
+
+fieldset .filter-list {
+    text-align: center;
+}
+
+.filter-button {
+    font: inherit;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background: transparent;
+    border: none;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.search-amount p {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.search-sorting p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.search-sorting-list {
+    list-style: none;
+}
+.search-sorting-list li {
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px #81b3d2 dotted;
+}
+
+.search-sorting-list li:active {
+    color: #81b3d2;
+    text-decoration: none;
+}
+.search-sorting-list li:focus {
+    color: #000000;
+    text-decoration: none;
+}
+
+.search-sorting-list li:hover {
+    color: #81b3d2;
+}
+
+.search-result-item h4 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.search-result-item h4:hover {
+    color: #81b3d2;
+}
+
+.search-result-item h4:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.search-result-item p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.item-more {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+.item-more:hover {
+    background-color: #669ec0;
+}
+
+.item-more:focus {
+    background-color: #5496bd;
+}
+
+.item-reserve {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #766357;
+}
+
+.item-reserve:hover {
+    background-color: #604e43;
+}
+
+.item-reserve:focus {
+    background-color: #503e33;
+}
+
+.rating-text {
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+    background-color: #f2f2f2;
 }
