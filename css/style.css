@@ -11,11 +11,41 @@ body {
 }
 
 .wrapper {
+    width: 1200px;
+    margin: 0 auto;
     background-color: #ffffff;
+    position: relative;
+    box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+
 }
 
 a {
     text-decoration: none;
+}
+
+.main-header nav {
+    display: flex;
+    background-color: #ffffff;
+    width: 100%;
+    height: 56px;
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-left,
+.menu-right {
+    display: flex;
+    justify-content: space-around;
+}
+
+.site-navigation li {
+    border: 0;
+    margin: 0;
+    width: 240px;
+    text-align: center;
 }
 
 .site-navigation a {
@@ -28,7 +58,29 @@ a {
 
 .site-navigation {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
+  .main-header-logo {
+    width: 140px;
+    min-height: 72px;
+    position: absolute;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .menu-left,
+  .menu-right {
+    margin: 0;
+    padding: 0;
+    width: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+
 
 .site-navigation a {
     color: #000000;
@@ -391,3 +443,24 @@ a {
     color: #666666;
     background-color: #f2f2f2;
 }
+
+/*сетки*/
+
+.main-header-logo {
+    margin: auto;
+    margin-bottom: 0;
+}
+
+.site-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+
+div, section, a, ul, li, p, footer, header, main {
+    outline: 1px solid red;
+    }
