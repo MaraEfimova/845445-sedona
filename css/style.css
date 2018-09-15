@@ -395,7 +395,6 @@ a {
 
 /*сетки*/
 
-
 .main-header nav {
     display: flex;
     background-color: #ffffff;
@@ -415,7 +414,7 @@ a {
 }
 
 .menu-left li:nth-child(2) {
-    margin: 240px;
+    margin-right: 240px;
 }
 
 .site-navigation li {
