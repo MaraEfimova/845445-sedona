@@ -402,6 +402,12 @@ a {
     height: 56px;
 }
 
+.main-header-logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
 .site-navigation {
     display: flex;
     justify-content: space-between;
