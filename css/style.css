@@ -646,22 +646,23 @@ a {
     padding-left: 0px;
 }
 
-.wrappper {
-    position: absolute;
+.hotel-form {
+    position: relative;
+    z-index: 30;
     width: 1200px;
     height: 593px;
-}
-
-.hotel-form {
-    z-index: 30;
+    top: 0;
 }
 
 .search-form {
+    position: absolute;
     background-color: #ffffff;
+    left: 316px;
 }
 
 .map {
     z-index: 20;
+     top: -593px; /*Почему не срабатывает это свойство? */
 }
 
 div, section, a, ul, li, p, footer, header, main {
