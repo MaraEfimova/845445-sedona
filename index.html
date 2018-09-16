@@ -48,7 +48,7 @@
         <h2 class="visually-hidden">Преимущества</h2>
 
         <div class="excerpt">
-          <p class="attract">Седона - небольшой городок в Аризоне,<br/> заслуживающий большего!</p>
+          <p class="attract">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
           <p class="features-offer">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
         </div>
 
@@ -59,22 +59,21 @@
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="first-reason-img">
-            <img src="img/first-reason.jpg" width="800" height="401" alt="restaraunt">
           </div>
         </div>
         
         <ul class="offers-list">
-            <li class="offers-item">
+            <li class="offers-item offers-item-home">
               <h3>Жилье</h3>
               <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
   
-            <li class="offers-item">
+            <li class="offers-item offers-item-food">
               <h3>Еда</h3>
               <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
   
-            <li class="offers-item">
+            <li class="offers-item offers-item-souvenir">
               <h3>Сувениры</h3>
               <p>Не только китайского, но и местного производства!</p>
             </li>
@@ -88,77 +87,76 @@
             <p>Да, по нему можно пройтись! Если конечно вы осмелитесь</p>
           </div>
           <div class="second-reason-img">
-            <img src="img/second-reason.jpg" width="800" height="400" alt="devils-bridje">
           </div>
         </div>
 
         <div class="features-min-decorate">
-            <div class="third-reason">
-              <h3>Небольшая площадь</h3>
-              <span>— №3 —</span>
-              <p>Все достопримечательности находятся очень близко</p>
-            </div>
-            <div class="fourth-reason">
-              <h3>Красивая дорога</h3>
-              <span>— №4 —</span>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </div>
-            <div class="fifth-reason">
-              <h3>Мало туристов</h3>
-              <span>— №5 —</span>
-              <p>Большинство едет в Гранд Каньон и толпится там</p>
-            </div>
+          <div class="third-reason">
+            <h3>Небольшая площадь</h3>
+            <span>— №3 —</span>
+            <p>Все достопримечательности находятся очень близко</p>
+          </div>
+          <div class="fourth-reason">
+            <h3>Красивая дорога</h3>
+            <span>— №4 —</span>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+          <div class="fifth-reason">
+            <h3>Мало туристов</h3>
+            <span>— №5 —</span>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
         </div>
 
-        <section class="hotel-form">
-          <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <div class="excerpt-end">
+          <p class="attract-end">Заинтересовались?</p>
+          <p class="features-offer-end">Укажите предполагаемые даты поездки,<br/> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="hotel-search-button">Поиск гостиницы в Седоне</button>
+        </div>
 
-          <div class="excerpt">
-            <p class="attract">Заинтересовались?</p>
-            <p class="features-offer">Укажите предполагаемые даты поездки,<br/> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <button class="hotel-search-button">Поиск гостиницы в Седоне</button>
-          </div>
+        <div class="wrapper-down">
+          <section class="hotel-form">
+            <h2 class="visually-hidden">Поиск гостиницы</h2>
+            <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
+              <div class="date-search-form">
+                <label for="date-of-arrival">Дата заезда:</label>
+                <input type="text" name="date-of-arrival" id="date-of-arrival" placeholder="24.04.2017">
+                <button type="button">Выбрать дату</button>
+              </div>
 
-          <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
-            <div class="date-search-form">
-              <label for="date-of-arrival">Дата заезда:</label>
-              <input type="text" name="date-of-arrival" id="date-of-arrival" placeholder="24.04.2017">
-              <button type="button">Выбрать дату</button>
-            </div>
+              <div class="date-search-form">
+                <label for="date-of-departure">Дата выезда:</label>
+                <input type="text" name="date" id="date-of-departure" placeholder="04.07.2017">
+                <button type="button">Выбрать дату</button>
+              </div>
+              
+              <div class="number-search-wrapper">
+                <div class="number-search-form">
+                  <label for="adult">Взрослые:</label>
+                  <input type="number" min="1" max="10" step="1" id="adult">
+                </div>          
+                
+                <div class="number-search-form">
+                  <label for="child">Дети:</label>
+                  <input type="number" min="1" max="10" step="1" id="child">
+                </div>
+              </div>
 
-            <div class="date-search-form">
-              <label for="date-of-departure">Дата выезда:</label>
-              <input type="text" name="date" id="date-of-departure" placeholder="04.07.2017">
-              <button type="button">Выбрать дату</button>
-            </div>
-            
-            <div class="number-search-form">
-              <label for="adult">Взрослые:</label>
-              <input type="number" min="1" max="10" step="1" id="adult">
-            </div>          
-            
-            <div class="number-search-form">
-              <label for="child">Дети:</label>
-              <input type="number" min="1" max="10" step="1" id="child">
-            </div>
+              <button type="submit" class="filter-button button">Найти</button>
+            </form>
 
-            <button type="submit" class="filter-button button">Найти</button>
-          </form>
+          </section>
 
-        </section>
-
-        <section class="map" id="map-sedona">
-          <h2 class="visually-hidden">Карта штата</h2>
-        </section>
-
+          <section class="map" id="map-sedona">
+            <h2 class="visually-hidden">Карта штата</h2>
+          </section>
+        </div>
       </main>
 
       <footer class="main-footer">
-
         <p class="footer-hashtag">
         #visitsedona
         </p>
-
         <div class="footer-social">
           <ul>
             <li><a class="social-button" href="#">Твиттер</a></li>
@@ -166,7 +164,6 @@
             <li><a class="social-button" href="#">Ютуб</a></li>
           </ul>
         </div>
-
         <p class="footer-copyright">
           <b>website by</b>
           <a class="button" href="https://htmlacademy.ru/">
