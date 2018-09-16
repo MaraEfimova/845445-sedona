@@ -646,8 +646,6 @@ a {
     padding-left: 0px;
 }
 
-/*сетки hotels*/
-
 .wrappper {
     position: absolute;
     width: 1200px;
@@ -655,21 +653,18 @@ a {
 }
 
 .hotel-form {
-    border-color: #ffffff;
     z-index: 30;
+}
+
+.search-form {
+    background-color: #ffffff;
 }
 
 .map {
     z-index: 20;
 }
 
-
-
-
-/* 
-
-
 div, section, a, ul, li, p, footer, header, main {
     outline: 1px solid tomato;
     box-sizing: border-box;
-}  */
+}  
