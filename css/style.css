@@ -644,13 +644,32 @@ a {
     justify-content: space-between;
     align-items: center;
     padding-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
 }
 
+/*сетки hotels*/
+
+.wrappper {
+    position: absolute;
+    width: 1200px;
+    height: 593px;
+}
+
+.hotel-form {
+    border-color: #ffffff;
+    z-index: 30;
+}
+
+.map {
+    z-index: 20;
+}
+
+
+
+
+/* 
 
 
 div, section, a, ul, li, p, footer, header, main {
     outline: 1px solid tomato;
     box-sizing: border-box;
-} 
+}  */

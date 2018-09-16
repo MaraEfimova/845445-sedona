@@ -114,43 +114,42 @@
           <button class="hotel-search-button">Поиск гостиницы в Седоне</button>
         </div>
 
-        <div class="wrapper-down">
           <section class="hotel-form">
             <h2 class="visually-hidden">Поиск гостиницы</h2>
-            <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
-              <div class="date-search-form">
-                <label for="date-of-arrival">Дата заезда:</label>
-                <input type="text" name="date-of-arrival" id="date-of-arrival" placeholder="24.04.2017">
-                <button type="button">Выбрать дату</button>
-              </div>
-
-              <div class="date-search-form">
-                <label for="date-of-departure">Дата выезда:</label>
-                <input type="text" name="date" id="date-of-departure" placeholder="04.07.2017">
-                <button type="button">Выбрать дату</button>
-              </div>
-              
-              <div class="number-search-wrapper">
-                <div class="number-search-form">
-                  <label for="adult">Взрослые:</label>
-                  <input type="number" min="1" max="10" step="1" id="adult">
-                </div>          
-                
-                <div class="number-search-form">
-                  <label for="child">Дети:</label>
-                  <input type="number" min="1" max="10" step="1" id="child">
+            <div class="wrappper">       
+              <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
+                <div class="date-search-form">
+                  <label for="date-of-arrival">Дата заезда:</label>
+                  <input type="text" name="date-of-arrival" id="date-of-arrival" placeholder="24.04.2017">
+                  <button type="button">Выбрать дату</button>
                 </div>
-              </div>
 
-              <button type="submit" class="filter-button button">Найти</button>
-            </form>
+                <div class="date-search-form">
+                  <label for="date-of-departure">Дата выезда:</label>
+                  <input type="text" name="date" id="date-of-departure" placeholder="04.07.2017">
+                  <button type="button">Выбрать дату</button>
+                </div>
+                
+                <div class="number-search-wrapper">
+                  <div class="number-search-form">
+                    <label for="adult">Взрослые:</label>
+                    <input type="number" min="1" max="10" step="1" id="adult">
+                  </div>          
+                  
+                  <div class="number-search-form">
+                    <label for="child">Дети:</label>
+                    <input type="number" min="1" max="10" step="1" id="child">
+                  </div>
+                </div>
 
+                <button type="submit" class="filter-button button">Найти</button>
+              </form>>
+            </div>
           </section>
 
           <section class="map" id="map-sedona">
             <h2 class="visually-hidden">Карта штата</h2>
           </section>
-        </div>
       </main>
 
       <footer class="main-footer">
