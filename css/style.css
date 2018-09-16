@@ -241,10 +241,9 @@ a {
 .map {
     background-image: url("../img/map.jpg");
     width: 100%;
-    height: 470px;
 }
 
-.footer-social {
+.main-footer {
     background-color: rgba(254, 254, 254, 0.9)
 }
 
@@ -612,7 +611,6 @@ a {
     justify-content: space-around;
     padding: 0;
     margin: 0;
-    height: 120px;
 }
 
 .footer-hashtag {
@@ -649,9 +647,6 @@ a {
 .hotel-form {
     position: relative;
     z-index: 30;
-    width: 1200px;
-    height: 593px;
-    top: 0;
 }
 
 .search-form {
@@ -660,10 +655,29 @@ a {
     left: 316px;
 }
 
-.map {
-    z-index: 20;
-     top: -593px; /*Почему не срабатывает это свойство? */
+.wrapper-map {
+    position: relative;
+    min-height: 593px;
 }
+
+.map {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    min-height: 593px;
+}
+
+.footer-position {
+    position: absolute;
+    z-index: 30;
+    bottom: 0;
+    min-width: 1200px;
+}
+
+
+
+
+
 
 div, section, a, ul, li, p, footer, header, main {
     outline: 1px solid tomato;
