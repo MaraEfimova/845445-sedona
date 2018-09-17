@@ -766,13 +766,15 @@ fieldset {
 }
 
 .page-footer {
-    height: 574px;
+    height: 121px;
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
 
-
+.wrapper-hotel {
+    margin-bottom: auto;
+}
 div, section, a, ul, li, p, footer, header, main, fieldset {
     outline: 1px solid green;
     box-sizing: border-box;
