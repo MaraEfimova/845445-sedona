@@ -16,18 +16,10 @@
             <img src="img/logo-sedona.svg" width="140" height="72" alt="Sedona logo">
           </a>
           <ul class="site-navigation">
-            <li>
-              <a href="index.html">Информация</a>
-            </li>
-            <li>
-              <a href="#">Фото и видео</a>
-            </li>
-            <li>
-              <a href="index.html#map-sedona">Карта штата</a>
-            </li>
-            <li>
-              <a href="#" class="active">Гостиницы</a>
-            </li>
+            <li><a href="index.html">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="index.html#map-sedona">Карта штата</a></li>
+            <li><a href="#" class="active">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -73,15 +65,21 @@
                   </li>
                 </ul>
             </fieldset>
-            <div>
-              <p class="cost-per-day">Стоимость в сутки (Р):</p>
-              <div class="range-setup">
-                <input class="range min" type="text" name="range min" placeholder="От 0">
-                <input type="text" name="range max" placeholder="До 3000">
+            <div class="filter-range">
+                <div class="filter-range-title">Стоимость в сутки (р):</div>
+                <div class="price-controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <button class="btn-transparent" type="submit">Показать</button>
               </div>
-              <input type="range" min="0" max="4000" step="500" name="price">
-            </div>
-            <button type="submit" class="filter-button-hotels button">Показать</button>
           </form>
 
         </section>
@@ -106,9 +104,7 @@
 
           <section class="search-result-item">
             <div class="result-item">
-
               <img src="img/amara-resort-and-spa.jpg" width="135" height="90" alt="Amara Resort & Spa">
-
               <div class="information">
                 <h4>Amara Resort & Spa</h4>
                 <div class="text-info">
@@ -120,17 +116,14 @@
                   <a class="item-reserve">Забронировать</a>
                 </div>
               </div>
-
               <ul class="star-list">
                 <li><img src="img/star.svg" width="11" height="10" alt="rating"></li>
               </ul>
               <span class="rating-text">Рейтинг: 8,5</span>
-
             </div>
 
             <div class="result-item">
               <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Desert Quail Inn">
-
               <div class="information">
                 <h4>Desert Quail Inn</h4>
                 <div class="text-info">
@@ -142,16 +135,13 @@
                   <a class="item-reserve">Забронировать</a>
                 </div>
               </div>
-
               <ul class="star-list">
                 <li><img src="img/star.svg" width="11" height="10" alt="rating"></li>
               </ul>
               <span class="rating-text">Рейтинг: 8,9</span>
             </div>
-
             <div class="result-item">
               <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
-
               <div class="information">
                 <h4>Villas at Poco Diablo</h4>
                 <div class="text-info">
@@ -163,7 +153,6 @@
                   <a class="item-reserve">Забронировать</a>
                 </div>
               </div>
-
               <ul class="star-list">
                 <li><img src="img/star.svg" width="11" height="10" alt="rating"></li>
               </ul>
@@ -180,9 +169,9 @@
       </p>
       <div class="footer-social">
         <ul class="footer-social-list">
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Ютуб</a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Ютуб</span></a></li>
         </ul>
       </div>
       <p class="footer-copyright">
