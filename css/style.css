@@ -114,7 +114,7 @@ input[type="radio"].visually-hidden {
     flex-direction: column;
     justify-content: center;
     height: 216px;
-    width: ;
+    width: 570px;;
     padding: 60px 40px 60px 40px;
     margin: auto 310px;
 }
@@ -165,6 +165,7 @@ input[type="radio"].visually-hidden {
     height: 256px;
 
 }
+
 .first-reason-text h3,
 .second-reason-text h3 {
     font-size: 21px;
@@ -197,8 +198,9 @@ input[type="radio"].visually-hidden {
 
 .offers-item {
     text-align: center;
-    padding: 50px;
+    padding: 60px;
     padding-top: 140px;
+    width: 400px;
 }
 
 .offers-item h3{
@@ -389,8 +391,7 @@ input[type="radio"].visually-hidden {
     z-index: 30;
     bottom: 0;
     min-width: 1200px;
-    padding: 36px 100px;
-    box-sizing: border-box;
+    padding: 36px 20px;
 }
 
 .footer-hashtag {
@@ -398,7 +399,7 @@ input[type="radio"].visually-hidden {
     line-height: 26px;
     font-weight: 700;
     color: #000000;
-    padding: 0;
+    padding: 10px 50px 0px 10px;
     margin: 0;
 }
 
@@ -459,15 +460,10 @@ input[type="radio"].visually-hidden {
     align-items: center;
     flex-wrap: wrap;
     margin: 0;
+    padding: 0;
 }
 
-
-
-
-
-
-/*стилизация внутренней страницы*/
-
+/*внутренняя страница*/
 
 .inner-page {
     font-size: 14px;
@@ -486,79 +482,85 @@ input[type="radio"].visually-hidden {
 }
 
 .filter {
-   background-color: #81b3d3;
-   background-image: url("../img/background-hotel.jpg");
-   background-repeat: no-repeat;
-   background-position: 50% 15%;
-       height: 217px;
+    background-color: #81b3d3;
+    background-image: url("../img/background-hotel.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 15%;
+    min-height: 217px;
     display: flex;
-    justify-content: space-around;
-    padding-top: 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
     box-sizing: border-box;
+    padding: 30px 60px 0px 70px;
 }
 
-.filter fieldset {
+.filter-block {
     border: none;
     padding: 0;
     margin: 0;
 }
 
+.flex-wrap {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
 .filter-list,
 .filter-option {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.filter-option {
+    width: 220px;
+    height: 43px;
 }
 
 .filter legend {
     font-size: 16px;
     font-weight: 700;
     color: #ffffff;
-    text-align: center;
+    text-align: start;
+    width: 120px;
+    margin-bottom: 25px;
 }
 
 .filter-option label {
     color: #ffffff;
-    text-align: center;
+    text-align: start;
 }
 
 .filter-list {
-    text-align: center;
-    padding-left: 0;
+    display: block;
+    padding: 0;
     margin: 0;
+    margin-left: 40px;
 }
 
-.filter-button-hotels {
-    font: inherit;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    color: #ffffff;
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
-    background: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 2px;
-}
-
-.filter-button-hotels:hover,
-.filter-button-hotels:focus {
-    background-color: #ffffff;
-    color: #000000;
-}
-
-.search-amount p {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
+.search-result-unit {
+    padding: 9px 70px;
+    min-height: 87px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: wrap;
 }
 
 .search-amount {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
     width: 150px;
 }
 
-.search-sorting p {
+.search-sorting {
     font-size: 12px;
     line-height: 18px;
+    padding-left: 15px;
+    padding-right: 20px;
 }
 
 .search-sorting-list {
@@ -574,6 +576,8 @@ input[type="radio"].visually-hidden {
     line-height: 18px;
     color: rgba(0, 0, 0, 0.3);
     border-bottom: 1px #81b3d2 dotted;
+    padding-left: 15px;
+    padding-right: 20px;
 }
 
 .search-sorting-list li:active {
@@ -588,6 +592,24 @@ input[type="radio"].visually-hidden {
 
 .search-sorting-list li:hover {
     color: #81b3d2;
+}
+
+.sorting-scroll {
+    font-size: 0;
+    margin-left: auto;
+    display: flex;
+    width: 35px;
+    justify-content: space-between;
+}
+
+.sorting-scroll-up:hover path,
+.sorting-scroll-down:hover path {
+    fill:#231f20;
+}
+
+.sorting-scroll-up:focus path,
+.sorting-scroll-down:focus path {
+    fill:#81b3d2;
 }
 
 .search-result-item h4 {
@@ -613,6 +635,7 @@ input[type="radio"].visually-hidden {
     color: #ffffff;
     background-color: #81b3d2;
 }
+
 .item-more:hover {
     background-color: #669ec0;
 }
@@ -638,10 +661,15 @@ input[type="radio"].visually-hidden {
 .rating-text {
     color: #666666;
     background-color: #f2f2f2;
+    width: 110px;
+    height: 27px;
+    text-align: center;
+    padding: 4px 12px;
 }
 
 .result-item {
     display: flex;
+    justify-content: flex-start;
     height: 151px;
 }
 
@@ -650,66 +678,64 @@ input[type="radio"].visually-hidden {
     margin-left: 43px;
 }
 
-.text-info {
-    display: flex;
-    justify-content: space-between;    
-}
-
-.intent-item {
-    display: flex;
-    justify-content: space-between;
-}
-
 .information {
     width: 258px;
 }
 
-.star-list {
-    margin-left: auto;
+.star-rating {
+    margin: 29px 73px 29px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .item-more {
     height: 27px;
     width: 110px;
+    padding: 4px 17px;
 }
 
 .item-reserve {
     height: 27px;
     width: 142px;
     text-align: center;
+    padding: 4px 17px;
 }
 
 .information h4 {
     margin-top: 15px;
     margin-bottom: 0;
     padding: 10px;
-    
+}
+
+.text-info,
+.intent-item {
+    display: table-row;
+}
+
+.text-info p,
+.intent-item a {
+    display: table-cell;
+    padding-bottom: 10px;
+    padding-right: 10px;
 }
 
 .page-footer {
-    height: 121px;
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: space-around;
+    text-align: center;
+    min-height: 120px;
+    min-width: 1200px;
+    padding: 36px 20px;
 }
-
-
 
 div, section, a, ul, li, p, footer, header, main, fieldset {
     outline: 1px solid green;
     box-sizing: border-box;
 }  
 
-
-
-
-
-
-
-
-
-
-
+/*сложный фильтр*/
 
 .filter-range {
 width: 330px;
